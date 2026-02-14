@@ -26,6 +26,7 @@ whiskers:
     --newtab-text-primary-color: #{{ text.hex }} !important;
     --arrowpanel-color: #{{ text.hex }} !important;
     --arrowpanel-background: #{{ base.hex }} !important;
+    --zen-dialog-background: #{{ base.hex }} !important;
     --sidebar-text-color: #{{ text.hex }} !important;
     --lwt-sidebar-text-color: #{{ text.hex }} !important;
     --lwt-sidebar-background-color: #{{ crust.hex }} !important;
@@ -39,6 +40,11 @@ whiskers:
 
   #permissions-granted-icon {
     color: #{{ mantle.hex }} !important;
+  }
+
+  #historySwipeAnimationPreviousArrow,#historySwipeAnimationNextArrow {
+    --swipe-nav-icon-primary-color: #{{ palette[accent].hex }} !important;
+    --swipe-nav-icon-accent-color: #{{ base.hex }}!important;
   }
 
   .sidebar-placesTree {
@@ -131,11 +137,24 @@ whiskers:
     --identity-icon-color: #{{ mauve.hex }} !important;
   }
 
-  hbox#titlebar {
-    background-color: #{{ mantle.hex }} !important;
+  #navigator-toolbox {
+    --zen-main-browser-background-toolbar: #{{ mantle.hex }} !important;
   }
 
   #zen-appcontent-navbar-container {
     background-color: #{{ mantle.hex }} !important;
   }
+  
+  #commonDialog {
+    background-color: #{{ mantle.hex }} !important;
+  }
+
+  #zen-toast-container .zen-toast label,
+  #zen-toast-container .zen-toast button .button-icon,
+  #urlbar-search-mode-indicator,
+  .urlbarView .urlbarView-row[selected] *,
+  .urlbarView .urlbarView-row[selected] .urlbarView-title-separator::before {
+    color: #{{ base.hex }} !important;
+  }
+
 }

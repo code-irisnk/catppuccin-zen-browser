@@ -16,6 +16,7 @@
     --newtab-text-primary-color: #cdd6f4 !important;
     --arrowpanel-color: #cdd6f4 !important;
     --arrowpanel-background: #1e1e2e !important;
+    --zen-dialog-background: #1e1e2e !important;
     --sidebar-text-color: #cdd6f4 !important;
     --lwt-sidebar-text-color: #cdd6f4 !important;
     --lwt-sidebar-background-color: #11111b !important;
@@ -24,10 +25,16 @@
     --zen-themed-toolbar-bg: #181825 !important;
     --zen-main-browser-background: #181825 !important;
     --toolbox-bgcolor-inactive: #181825 !important;
+    --zen-themed-toolbar-bg-transparent: #181825 !important;
   }
 
   #permissions-granted-icon {
     color: #181825 !important;
+  }
+
+  #historySwipeAnimationPreviousArrow,#historySwipeAnimationNextArrow {
+    --swipe-nav-icon-primary-color: #94e2d5 !important;
+    --swipe-nav-icon-accent-color: #1e1e2e!important;
   }
 
   .sidebar-placesTree {
@@ -120,11 +127,24 @@
     --identity-icon-color: #cba6f7 !important;
   }
 
-  hbox#titlebar {
-    background-color: #181825 !important;
+  #navigator-toolbox {
+    --zen-main-browser-background-toolbar: #181825 !important;
   }
 
   #zen-appcontent-navbar-container {
     background-color: #181825 !important;
   }
+  
+  #commonDialog {
+    background-color: #181825 !important;
+  }
+
+  #zen-toast-container .zen-toast label,
+  #zen-toast-container .zen-toast button .button-icon,
+  #urlbar-search-mode-indicator,
+  .urlbarView .urlbarView-row[selected] *,
+  .urlbarView .urlbarView-row[selected] .urlbarView-title-separator::before {
+    color: #1e1e2e !important;
+  }
+
 }
