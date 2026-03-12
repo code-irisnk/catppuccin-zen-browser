@@ -134,7 +134,7 @@
   #zen-appcontent-navbar-container {
     background-color: #181825 !important;
   }
-  
+
   #commonDialog {
     background-color: #181825 !important;
   }
@@ -147,4 +147,14 @@
     color: #1e1e2e !important;
   }
 
+  hbox#titlebar {
+    background-color: #1e1e2e !important;
+    border-radius: 12px !important;
+  }
+
+    #zen-browser-background {
+
+        --zen-main-browser-background: #181825 !important;
+            --zen-main-browser-background-old: #181825 !important;
+  }
 }

@@ -144,7 +144,7 @@ whiskers:
   #zen-appcontent-navbar-container {
     background-color: #{{ mantle.hex }} !important;
   }
-  
+
   #commonDialog {
     background-color: #{{ mantle.hex }} !important;
   }
@@ -157,4 +157,14 @@ whiskers:
     color: #{{ base.hex }} !important;
   }
 
+  hbox#titlebar {
+    background-color: #{{ base.hex }} !important;
+    border-radius: 12px !important;
+  }
+
+    #zen-browser-background {
+
+        --zen-main-browser-background: #{{ mantle.hex }} !important;
+            --zen-main-browser-background-old: #{{ mantle.hex }} !important;
+  }
 }
