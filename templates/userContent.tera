@@ -103,6 +103,10 @@ whiskers:
       --table-row-background-color-alternate: #{{ base.hex }} !important;
     }
 
+    #input {
+      background-color: #{{ surface0.hex }} !important;
+    }
+
     .container {
       background-color: #{{ surface0.hex }} !important;
     }
