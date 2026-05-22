@@ -1,7 +1,9 @@
 /* Catppuccin Macchiato Maroon userChrome.css*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  :host,
+  :host *, :root *, *, * *,
+  .container, .sticky-container, #toolbar, #prefs {
     --zen-colors-primary: #363a4f !important;
     --zen-primary-color: #ee99a0 !important;
     --zen-colors-secondary: #363a4f !important;
@@ -26,6 +28,13 @@
     --zen-main-browser-background: #1e2030 !important;
     --toolbox-bgcolor-inactive: #1e2030 !important;
     --zen-themed-toolbar-bg-transparent: #1e2030 !important;
+    --promo-background-color: #363a4f !important;
+    --input-text-background-color: #363a4f !important;
+    --background-color-box: #363a4f !important;
+    --background-color-canvas: #181926 !important;
+    --background-color-box-info: #181926 !important;
+    --table-row-background-color: #181926 !important;
+    --table-row-background-color-alternate: #24273a !important;
   }
 
   #permissions-granted-icon {
@@ -152,9 +161,7 @@
     border-radius: 12px !important;
   }
 
-    #zen-browser-background {
-
-        --zen-main-browser-background: #1e2030 !important;
-            --zen-main-browser-background-old: #1e2030 !important;
+  #zen-browser-background {
+    --zen-main-browser-background: #1e2030 !important;
+    --zen-main-browser-background-old: #1e2030 !important;
   }
-}

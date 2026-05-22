@@ -11,6 +11,13 @@
       --color-accent-primary-active: rgb(138, 153, 250) !important;
       background-color: #1e1e2e !important;
       --in-content-page-background: #1e1e2e !important;
+      --promo-background-color: #313244 !important;
+      --input-text-background-color: #313244 !important;
+      --background-color-box: #313244 !important;
+      --background-color-canvas: #11111b !important;
+      --background-color-box-info: #11111b !important;
+      --table-row-background-color: #11111b !important;
+      --table-row-background-color-alternate: #1e1e2e !important;
     }
 
   }
@@ -70,6 +77,13 @@
       --zen-colors-primary: #313244 !important;
       --in-content-box-background: #313244 !important;
       --zen-primary-color: #89b4fa !important;
+      --promo-background-color: #313244 !important;
+      --input-text-background-color: #313244 !important;
+      --background-color-box: #313244 !important;
+      --background-color-canvas: #11111b !important;
+      --background-color-box-info: #11111b !important;
+      --table-row-background-color: #11111b !important;
+      --table-row-background-color-alternate: #1e1e2e !important;
     }
 
     groupbox , moz-card{

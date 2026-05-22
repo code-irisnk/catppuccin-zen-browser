@@ -1,7 +1,9 @@
 /* Catppuccin Mocha Sky userChrome.css*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  :host,
+  :host *, :root *, *, * *,
+  .container, .sticky-container, #toolbar, #prefs {
     --zen-colors-primary: #313244 !important;
     --zen-primary-color: #89dceb !important;
     --zen-colors-secondary: #313244 !important;
@@ -26,6 +28,13 @@
     --zen-main-browser-background: #181825 !important;
     --toolbox-bgcolor-inactive: #181825 !important;
     --zen-themed-toolbar-bg-transparent: #181825 !important;
+    --promo-background-color: #313244 !important;
+    --input-text-background-color: #313244 !important;
+    --background-color-box: #313244 !important;
+    --background-color-canvas: #11111b !important;
+    --background-color-box-info: #11111b !important;
+    --table-row-background-color: #11111b !important;
+    --table-row-background-color-alternate: #1e1e2e !important;
   }
 
   #permissions-granted-icon {
@@ -152,9 +161,7 @@
     border-radius: 12px !important;
   }
 
-    #zen-browser-background {
-
-        --zen-main-browser-background: #181825 !important;
-            --zen-main-browser-background-old: #181825 !important;
+  #zen-browser-background {
+    --zen-main-browser-background: #181825 !important;
+    --zen-main-browser-background-old: #181825 !important;
   }
-}

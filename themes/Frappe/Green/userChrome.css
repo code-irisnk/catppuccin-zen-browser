@@ -1,7 +1,9 @@
 /* Catppuccin Frappe Green userChrome.css*/
 
-@media (prefers-color-scheme: dark) {
-  :root {
+  :root,
+  :host,
+  :host *, :root *, *, * *,
+  .container, .sticky-container, #toolbar, #prefs {
     --zen-colors-primary: #414559 !important;
     --zen-primary-color: #a6d189 !important;
     --zen-colors-secondary: #414559 !important;
@@ -26,6 +28,13 @@
     --zen-main-browser-background: #292c3c !important;
     --toolbox-bgcolor-inactive: #292c3c !important;
     --zen-themed-toolbar-bg-transparent: #292c3c !important;
+    --promo-background-color: #414559 !important;
+    --input-text-background-color: #414559 !important;
+    --background-color-box: #414559 !important;
+    --background-color-canvas: #232634 !important;
+    --background-color-box-info: #232634 !important;
+    --table-row-background-color: #232634 !important;
+    --table-row-background-color-alternate: #303446 !important;
   }
 
   #permissions-granted-icon {
@@ -152,9 +161,7 @@
     border-radius: 12px !important;
   }
 
-    #zen-browser-background {
-
-        --zen-main-browser-background: #292c3c !important;
-            --zen-main-browser-background-old: #292c3c !important;
+  #zen-browser-background {
+    --zen-main-browser-background: #292c3c !important;
+    --zen-main-browser-background-old: #292c3c !important;
   }
-}

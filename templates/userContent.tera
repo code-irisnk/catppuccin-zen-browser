@@ -21,6 +21,13 @@ whiskers:
       --color-accent-primary-active: {{ palette[accent] | add(hue=15) | css_rgb}} !important;
       background-color: #{{ base.hex }} !important;
       --in-content-page-background: #{{ base.hex }} !important;
+      --promo-background-color: #{{ surface0.hex }} !important;
+      --input-text-background-color: #{{ surface0.hex }} !important;
+      --background-color-box: #{{ surface0.hex }} !important;
+      --background-color-canvas: #{{ crust.hex }} !important;
+      --background-color-box-info: #{{ crust.hex }} !important;
+      --table-row-background-color: #{{ crust.hex }} !important;
+      --table-row-background-color-alternate: #{{ base.hex }} !important;
     }
 
   }
@@ -80,6 +87,13 @@ whiskers:
       --zen-colors-primary: #{{ surface0.hex }} !important;
       --in-content-box-background: #{{ surface0.hex }} !important;
       --zen-primary-color: #{{ palette[accent].hex }} !important;
+      --promo-background-color: #{{ surface0.hex }} !important;
+      --input-text-background-color: #{{ surface0.hex }} !important;
+      --background-color-box: #{{ surface0.hex }} !important;
+      --background-color-canvas: #{{ crust.hex }} !important;
+      --background-color-box-info: #{{ crust.hex }} !important;
+      --table-row-background-color: #{{ crust.hex }} !important;
+      --table-row-background-color-alternate: #{{ base.hex }} !important;
     }
 
     groupbox , moz-card{

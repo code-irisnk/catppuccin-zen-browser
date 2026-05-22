@@ -10,8 +10,10 @@ whiskers:
 
 /* Catppuccin {{flavor.identifier | capitalize}} {{accent | capitalize}} userChrome.css*/
 
-@media (prefers-color-scheme: {{ if(cond=flavor.dark, t="dark", f="light") }}) {
-  :root {
+  :root,
+  :host,
+  :host *, :root *, *, * *,
+  .container, .sticky-container, #toolbar, #prefs {
     --zen-colors-primary: #{{ surface0.hex }} !important;
     --zen-primary-color: #{{ palette[accent].hex }} !important;
     --zen-colors-secondary: #{{ surface0.hex }} !important;
@@ -36,6 +38,13 @@ whiskers:
     --zen-main-browser-background: #{{ mantle.hex }} !important;
     --toolbox-bgcolor-inactive: #{{ mantle.hex }} !important;
     --zen-themed-toolbar-bg-transparent: #{{ mantle.hex }} !important;
+    --promo-background-color: #{{ surface0.hex }} !important;
+    --input-text-background-color: #{{ surface0.hex }} !important;
+    --background-color-box: #{{ surface0.hex }} !important;
+    --background-color-canvas: #{{ crust.hex }} !important;
+    --background-color-box-info: #{{ crust.hex }} !important;
+    --table-row-background-color: #{{ crust.hex }} !important;
+    --table-row-background-color-alternate: #{{ base.hex }} !important;
   }
 
   #permissions-granted-icon {
@@ -162,9 +171,7 @@ whiskers:
     border-radius: 12px !important;
   }
 
-    #zen-browser-background {
-
-        --zen-main-browser-background: #{{ mantle.hex }} !important;
-            --zen-main-browser-background-old: #{{ mantle.hex }} !important;
+  #zen-browser-background {
+    --zen-main-browser-background: #{{ mantle.hex }} !important;
+    --zen-main-browser-background-old: #{{ mantle.hex }} !important;
   }
-}
