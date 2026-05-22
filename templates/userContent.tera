@@ -14,7 +14,7 @@ whiskers:
 
   /* Common variables affecting all pages */
   @-moz-document url-prefix("about:") {
-    :root {
+    :root, :host {
       --in-content-page-color: #{{ text.hex }} !important;
       --color-accent-primary: #{{ palette[accent].hex }} !important;
       --color-accent-primary-hover: {{ palette[accent] | add(lightness=5) | css_rgb }} !important;
@@ -35,7 +35,7 @@ whiskers:
   /* Variables and styles specific to about:newtab and about:home */
   @-moz-document url("about:newtab"), url("about:home") {
 
-    :root {
+    :root, :host {
       --newtab-background-color: #{{ base.hex }} !important;
       --newtab-background-color-secondary: #{{ surface0.hex }} !important;
       --newtab-element-hover-color: #{{ surface0.hex }} !important;
@@ -77,9 +77,15 @@ whiskers:
     }
   }
 
+  @-moz-document url-prefix("about:config") {
+    #toolbar {
+      background-color: #{{ base.hex }} !important;
+    }
+  }
+
   /* Variables and styles specific to about:preferences */
   @-moz-document url-prefix("about:preferences") {
-    :root {
+    :root, :host {
       --zen-colors-tertiary: #{{ mantle.hex }} !important;
       --in-content-text-color: #{{ text.hex }} !important;
       --link-color: #{{ palette[accent].hex }} !important;
@@ -87,6 +93,7 @@ whiskers:
       --zen-colors-primary: #{{ surface0.hex }} !important;
       --in-content-box-background: #{{ surface0.hex }} !important;
       --zen-primary-color: #{{ palette[accent].hex }} !important;
+
       --promo-background-color: #{{ surface0.hex }} !important;
       --input-text-background-color: #{{ surface0.hex }} !important;
       --background-color-box: #{{ surface0.hex }} !important;
@@ -94,6 +101,10 @@ whiskers:
       --background-color-box-info: #{{ crust.hex }} !important;
       --table-row-background-color: #{{ crust.hex }} !important;
       --table-row-background-color-alternate: #{{ base.hex }} !important;
+    }
+
+    .container {
+      background-color: #{{ surface0.hex }} !important;
     }
 
     groupbox , moz-card{

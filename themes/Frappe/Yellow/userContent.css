@@ -4,7 +4,7 @@
 
   /* Common variables affecting all pages */
   @-moz-document url-prefix("about:") {
-    :root {
+    :root, :host {
       --in-content-page-color: #c6d0f5 !important;
       --color-accent-primary: #e5c890 !important;
       --color-accent-primary-hover: rgb(234, 211, 166) !important;
@@ -25,7 +25,7 @@
   /* Variables and styles specific to about:newtab and about:home */
   @-moz-document url("about:newtab"), url("about:home") {
 
-    :root {
+    :root, :host {
       --newtab-background-color: #303446 !important;
       --newtab-background-color-secondary: #414559 !important;
       --newtab-element-hover-color: #414559 !important;
@@ -67,9 +67,15 @@
     }
   }
 
+  @-moz-document url-prefix("about:config") {
+    #toolbar {
+      background-color: #303446 !important;
+    }
+  }
+
   /* Variables and styles specific to about:preferences */
   @-moz-document url-prefix("about:preferences") {
-    :root {
+    :root, :host {
       --zen-colors-tertiary: #292c3c !important;
       --in-content-text-color: #c6d0f5 !important;
       --link-color: #e5c890 !important;
@@ -77,6 +83,7 @@
       --zen-colors-primary: #414559 !important;
       --in-content-box-background: #414559 !important;
       --zen-primary-color: #e5c890 !important;
+
       --promo-background-color: #414559 !important;
       --input-text-background-color: #414559 !important;
       --background-color-box: #414559 !important;
@@ -84,6 +91,10 @@
       --background-color-box-info: #232634 !important;
       --table-row-background-color: #232634 !important;
       --table-row-background-color-alternate: #303446 !important;
+    }
+
+    .container {
+      background-color: #414559 !important;
     }
 
     groupbox , moz-card{

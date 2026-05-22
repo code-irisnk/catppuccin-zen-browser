@@ -1,5 +1,6 @@
 /* Catppuccin Latte Lavender userChrome.css*/
 
+@media (prefers-color-scheme: light) {
   :root,
   :host,
   :host *, :root *, *, * *,
@@ -28,13 +29,6 @@
     --zen-main-browser-background: #e6e9ef !important;
     --toolbox-bgcolor-inactive: #e6e9ef !important;
     --zen-themed-toolbar-bg-transparent: #e6e9ef !important;
-    --promo-background-color: #ccd0da !important;
-    --input-text-background-color: #ccd0da !important;
-    --background-color-box: #ccd0da !important;
-    --background-color-canvas: #dce0e8 !important;
-    --background-color-box-info: #dce0e8 !important;
-    --table-row-background-color: #dce0e8 !important;
-    --table-row-background-color-alternate: #eff1f5 !important;
   }
 
   #permissions-granted-icon {
@@ -165,3 +159,4 @@
     --zen-main-browser-background: #e6e9ef !important;
     --zen-main-browser-background-old: #e6e9ef !important;
   }
+}

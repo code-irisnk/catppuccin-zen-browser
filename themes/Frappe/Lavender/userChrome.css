@@ -1,5 +1,6 @@
 /* Catppuccin Frappe Lavender userChrome.css*/
 
+@media (prefers-color-scheme: dark) {
   :root,
   :host,
   :host *, :root *, *, * *,
@@ -28,13 +29,6 @@
     --zen-main-browser-background: #292c3c !important;
     --toolbox-bgcolor-inactive: #292c3c !important;
     --zen-themed-toolbar-bg-transparent: #292c3c !important;
-    --promo-background-color: #414559 !important;
-    --input-text-background-color: #414559 !important;
-    --background-color-box: #414559 !important;
-    --background-color-canvas: #232634 !important;
-    --background-color-box-info: #232634 !important;
-    --table-row-background-color: #232634 !important;
-    --table-row-background-color-alternate: #303446 !important;
   }
 
   #permissions-granted-icon {
@@ -165,3 +159,4 @@
     --zen-main-browser-background: #292c3c !important;
     --zen-main-browser-background-old: #292c3c !important;
   }
+}
