@@ -31,6 +31,27 @@
     --zen-themed-toolbar-bg-transparent: #1e2030 !important;
   }
 
+  #tabs-newtab-button,
+  #tabs-newtab-button:hover,
+  #vertical-tabs-newtab-button,
+  #vertical-tabs-newtab-button:hover {
+    background-color: transparent !important;
+    color: #cad3f5 !important;
+    --toolbarbutton-icon-fill: #cad3f5 !important;
+  }
+
+  #tabs-newtab-button .toolbarbutton-icon,
+  #vertical-tabs-newtab-button .toolbarbutton-icon {
+    fill: #cad3f5 !important;
+    color: #cad3f5 !important;
+  }
+
+  #tabs-newtab-button .toolbarbutton-text,
+  #vertical-tabs-newtab-button .toolbarbutton-text {
+    color: #cad3f5 !important;
+    opacity: 1 !important;
+  }
+
   #permissions-granted-icon {
     color: #1e2030 !important;
   }
@@ -158,5 +179,26 @@
   #zen-browser-background {
     --zen-main-browser-background: #1e2030 !important;
     --zen-main-browser-background-old: #1e2030 !important;
+  }
+
+  /* Zen Twilight applies system acrylic/blur via `appearance` on the wrappers,
+   * which lets the window background bleed through the gaps between panels.
+   */
+  #zen-main-app-wrapper,
+  #zen-appcontent-wrapper,
+  #zen-sidebar-splitter,
+  #zen-browser-background {
+    appearance: unset !important;
+    -moz-default-appearance: none !important;
+  }
+
+  #zen-main-app-wrapper,
+  #zen-appcontent-wrapper,
+  #zen-browser-background {
+    background-color: #1e2030 !important;
+  }
+
+  #zen-sidebar-splitter {
+    background-color: #1e2030 !important;
   }
 }

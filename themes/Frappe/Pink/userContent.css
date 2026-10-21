@@ -93,12 +93,18 @@
       --table-row-background-color-alternate: #303446 !important;
     }
 
+    #input {
+      background-color: #414559 !important;
+    }
+
     .container {
       background-color: #414559 !important;
     }
 
     groupbox , moz-card{
       background: #303446 !important;
+      padding: 1.6rem !important;
+      border-radius: 8px !important;
     }
 
     button,
